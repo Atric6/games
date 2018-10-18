@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="2" desc="" eventsnippetid="14" extheight="384" extwidth="544" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="0.0" height="320" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="480">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <layer blendMode="normal" color="255,200,0" id="3" locked="false" name="Main Layer" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="4" locked="false" name="Player" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="21" id="0" name="Exit1" pts="4,0.0,0.0,0.0,21.0,17.0,21.0,17.0,0.0" r="64" type="box" w="17" x="519" y="357"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="0" id="0" name="Player 1" sx="1.0" sy="1.0" x="64" y="64" z="4"/>
+        <actor a="0.0" aid="2" c="false" group="0" id="0" name="Hero 2" sx="1.0" sy="1.0" x="63" y="87" z="4"/>
+        <actor a="0.0" aid="3" c="false" group="0" id="0" name="Hero 3" sx="1.0" sy="1.0" x="62" y="110" z="4"/>
+        <actor a="0.0" aid="4" c="false" group="0" id="0" name="Hero 4" sx="1.0" sy="1.0" x="63" y="123" z="4"/>
+        <actor a="0.0" aid="5" c="false" group="0" id="0" name="Hero 5" sx="1.0" sy="1.0" x="63" y="142" z="4"/>
+        <actor a="0.0" aid="6" c="false" group="0" id="0" name="Hero 6" sx="1.0" sy="1.0" x="62" y="162" z="4"/>
+        <actor a="0.0" aid="7" c="false" group="0" id="0" name="Hero 7" sx="1.0" sy="1.0" x="63" y="181" z="4"/>
+        <actor a="0.0" aid="8" c="false" group="0" id="0" name="Hero 8" sx="1.0" sy="1.0" x="63" y="202" z="4"/>
+        <actor a="0.0" aid="9" c="false" group="0" id="0" name="Hero 9" sx="1.0" sy="1.0" x="60" y="223" z="4"/>
+        <actor a="0.0" aid="10" c="false" group="0" id="0" name="Hero 10" sx="1.0" sy="1.0" x="62" y="243" z="4"/>
+        <actor a="0.0" aid="11" c="false" group="0" id="0" name="Hero 11" sx="1.0" sy="1.0" x="41" y="61" z="4"/>
+        <actor a="0.0" aid="12" c="false" group="0" id="0" name="Hero 12" sx="1.0" sy="1.0" x="41" y="80" z="4"/>
+        <actor a="0.0" aid="13" c="false" group="0" id="0" name="Hero 13" sx="1.0" sy="1.0" x="42" y="102" z="4"/>
+        <actor a="0.0" aid="14" c="false" group="0" id="0" name="Hero 14" sx="1.0" sy="1.0" x="39" y="125" z="4"/>
+        <actor a="0.0" aid="15" c="false" group="0" id="0" name="Hero 15" sx="1.0" sy="1.0" x="35" y="158" z="4"/>
+        <actor a="0.0" aid="16" c="false" group="0" id="0" name="Hero 16" sx="1.0" sy="1.0" x="42" y="211" z="4"/>
+        <actor a="0.0" aid="17" c="false" group="0" id="0" name="Hero 17" sx="1.0" sy="1.0" x="33" y="251" z="4"/>
+        <actor a="0.0" aid="18" c="false" group="0" id="0" name="Hero 18" sx="1.0" sy="1.0" x="18" y="195" z="4"/>
+        <actor a="0.0" aid="19" c="false" group="0" id="0" name="Hero 19" sx="1.0" sy="1.0" x="-5" y="227" z="4"/>
+        <actor a="0.0" aid="20" c="false" group="0" id="0" name="Hero 20" sx="1.0" sy="1.0" x="-3" y="57" z="4"/>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="4,0.0,0.0,32.0,0.0,32.0,64.0,0.0,64.0" x="288.0" y="128.0"/>
+        <p pts="4,32.0,0.0,32.0,64.0,0.0,64.0,0.0,0.0" x="160.0" y="128.0"/>
+        <p pts="8,448.0,64.0,448.0,0.0,480.0,0.0,480.0,96.0,0.0,96.0,0.0,0.0,32.0,0.0,32.0,64.0" x="0.0" y="224.0"/>
+        <p pts="8,480.0,0.0,480.0,96.0,448.0,96.0,448.0,32.0,32.0,32.0,32.0,96.0,0.0,96.0,0.0,0.0" x="0.0" y="0.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>
