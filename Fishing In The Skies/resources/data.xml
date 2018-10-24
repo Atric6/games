@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="6" fixedrot="false" fric="0.2" gid="3" id="2" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bucket O fish" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="3" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="42" id="3" name="Bucket O fish" shared="false" width="48">
+        <anim across="1" down="1" durations="100" height="42" id="0" loop="true" name="Animation 0" numframes="1" originx="24" originy="21" sync="false" version="2" width="48">
+            <poly data="4,0,0,48,0,48,42,0,42" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="false" fric="0.2" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Felix" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="33" list="0" val="up"/>
+                <prop id="34" list="0" val="down"/>
+                <prop id="37" list="0" val="0"/>
+                <prop id="38" list="0" val="true"/>
+                <prop id="39" list="0" val="false"/>
+                <prop id="40" list="0" val="0.0"/>
+                <prop id="41" list="0" val=""/>
+                <prop id="42" list="0" val=""/>
+                <prop id="11" list="0" val="30.0"/>
+                <prop id="43" list="0" val=""/>
+                <prop id="44" list="0" val=""/>
+                <prop id="45" list="0" val="true"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="1" name="Felix" shared="false" width="85">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Flying Right" numframes="1" originx="42" originy="32" sync="false" version="2" width="85">
+            <poly data="4,0,0,85,0,85,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Flying Right" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+</pack>
