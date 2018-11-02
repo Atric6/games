@@ -15,6 +15,7 @@
         <actor a="0.0" aid="4" c="false" group="3" id="2" name="Bucket O fish 4" sx="1.0" sy="1.0" x="6" y="108" z="0"/>
         <actor a="0.0" aid="5" c="false" group="3" id="2" name="Bucket O fish 5" sx="1.0" sy="1.0" x="5" y="295" z="0"/>
         <actor a="0.0" aid="6" c="false" group="3" id="2" name="Bucket O fish 6" sx="1.0" sy="1.0" x="6" y="355" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="6" name="Regular Bear 7" sx="1.0" sy="1.0" x="556" y="176" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

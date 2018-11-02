@@ -92,7 +92,9 @@
     </snippet>
     <snippet actorid="2" attachedevent="true" class="scripts.ActorEvents_2" classname="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="6" name="ActorEvents_2" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Actor - Actor" enabled="true" id="1" name="event-collide-actortoactor" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="4" attachedevent="true" class="scripts.ActorEvents_4" classname="scripts.ActorEvents_4" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="7" name="ActorEvents_4" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
