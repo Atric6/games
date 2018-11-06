@@ -69,20 +69,27 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_6 extends ActorScript
+class ActorEvents_2 extends ActorScript
 {
-	public var _Spawn:Actor;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Spawn", "_Spawn");
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== Specific Actor ======================== */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && (actor.getLastCollidedActor() == event.otherActor))
+			{
+				recycleActor(actor);
+			}
+		});
 		
 	}
 	
