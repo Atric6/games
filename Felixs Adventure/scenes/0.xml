@@ -9,32 +9,24 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="0" id="0" name="Felix 1" sx="1.0" sy="1.0" x="83" y="219" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="2" name="Bucket O fish 2" sx="1.0" sy="1.0" x="5" y="232" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="2" name="Bucket O fish 3" sx="1.0" sy="1.0" x="6" y="163" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="2" name="Bucket O fish 4" sx="1.0" sy="1.0" x="6" y="108" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="2" name="Bucket O fish 5" sx="1.0" sy="1.0" x="5" y="295" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="3" id="2" name="Bucket O fish 6" sx="1.0" sy="1.0" x="6" y="355" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="0" id="0" name="Felix 1" sx="1.0" sy="1.0" x="83" y="210" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="5" y="232" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="5" y="170" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="5" y="112" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="5" y="291" z="0"/>
+        <actor a="0.0" aid="37" c="false" group="3" id="6" name="Regular Bear 37" sx="1.0" sy="1.0" x="553" y="59" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="2" name="Bucket O fish0" sx="1.0" sy="1.0" x="5" y="345" z="0"/>
+        <actor a="0.0" aid="38" c="false" group="3" id="6" name="Regular Bear 38" sx="1.0" sy="1.0" x="553" y="126" z="0"/>
         <actor a="0.0" aid="7" c="false" group="3" id="9" name="Health Heart 7" sx="1.0" sy="1.0" x="0" y="419" z="0"/>
+        <actor a="0.0" aid="39" c="false" group="3" id="6" name="Regular Bear 39" sx="1.0" sy="1.0" x="552" y="190" z="0"/>
         <actor a="0.0" aid="8" c="false" group="3" id="9" name="Health Heart 8" sx="1.0" sy="1.0" x="14" y="419" z="0"/>
+        <actor a="0.0" aid="40" c="false" group="3" id="6" name="Regular Bear 40" sx="1.0" sy="1.0" x="550" y="316" z="0"/>
         <actor a="0.0" aid="9" c="false" group="3" id="9" name="Health Heart 9" sx="1.0" sy="1.0" x="32" y="418" z="0"/>
+        <actor a="0.0" aid="41" c="false" group="3" id="6" name="Regular Bear 41" sx="1.0" sy="1.0" x="551" y="253" z="0"/>
         <actor a="0.0" aid="10" c="false" group="3" id="9" name="Health Heart 10" sx="1.0" sy="1.0" x="33" y="430" z="0"/>
         <actor a="0.0" aid="11" c="false" group="3" id="9" name="Health Heart 11" sx="1.0" sy="1.0" x="16" y="430" z="0"/>
         <actor a="0.0" aid="12" c="false" group="3" id="9" name="Health Heart 12" sx="1.0" sy="1.0" x="0" y="430" z="0"/>
         <actor a="0.0" aid="13" c="false" group="3" id="9" name="Health Heart 13" sx="1.0" sy="1.0" x="1" y="445" z="0"/>
-        <actor a="0.0" aid="24" c="false" group="3" id="11" name="Wall 24" sx="1.0" sy="1.0" x="101" y="447" z="0"/>
-        <actor a="0.0" aid="25" c="false" group="3" id="11" name="Wall 25" sx="1.0" sy="1.0" x="113" y="449" z="0"/>
-        <actor a="0.0" aid="26" c="false" group="3" id="11" name="Wall 26" sx="1.0" sy="1.0" x="137" y="-29" z="0"/>
-        <actor a="0.0" aid="27" c="false" group="3" id="11" name="Wall 27" sx="1.0" sy="1.0" x="164" y="-27" z="0"/>
-        <actor a="0.0" aid="28" c="false" group="3" id="11" name="Wall 28" sx="1.0" sy="1.0" x="111" y="-28" z="0"/>
-        <actor a="0.0" aid="29" c="false" group="3" id="11" name="Wall 29" sx="1.0" sy="1.0" x="93" y="-28" z="0"/>
-        <actor a="0.0" aid="30" c="false" group="3" id="11" name="Wall 30" sx="1.0" sy="1.0" x="68" y="-26" z="0"/>
-        <actor a="0.0" aid="31" c="false" group="3" id="11" name="Wall 31" sx="1.0" sy="1.0" x="48" y="-28" z="0"/>
-        <actor a="0.0" aid="32" c="false" group="3" id="11" name="Wall 32" sx="1.0" sy="1.0" x="38" y="-27" z="0"/>
-        <actor a="0.0" aid="33" c="false" group="3" id="11" name="Wall 33" sx="1.0" sy="1.0" x="17" y="-27" z="0"/>
-        <actor a="0.0" aid="34" c="false" group="3" id="11" name="Wall 34" sx="1.0" sy="1.0" x="4" y="-27" z="0"/>
-        <actor a="0.0" aid="35" c="false" group="3" id="11" name="Wall 35" sx="7.5" sy="1.0" x="104" y="-28" z="0"/>
-        <actor a="0.0" aid="36" c="false" group="4" id="13" name="Fireball 36" sx="0.4" sy="0.4" x="145" y="215" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
