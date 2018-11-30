@@ -30,8 +30,9 @@
     <snippet actorid="0" attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_0" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
+            <event displayName="movement" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Fireball" enabled="true" id="2" name="event-key-press-release" order="3" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="3" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_4_4_8WayMovement" classname="scripts.Design_4_4_8WayMovement" desc="Allows the actor to move up, down, left and right as well as in diagonal directions." description="Allows the actor to move up, down, left and right as well as in diagonal directions." design="true" drawOrder="0" id="4" name="8 Way Movement" oid="-1" package="scripts" shared="false" type="actor">
@@ -98,11 +99,13 @@
     </snippet>
     <snippet actorid="6" attachedevent="true" class="scripts.ActorEvents_6" classname="scripts.ActorEvents_6" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="8" name="ActorEvents_6" oid="-1" package="scripts." shared="false" type="actor">
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spawn" hidden="false" id="1" name="_Spawn" order="0"/>
-        <number default="5" defaultValue="5" desc="" dropdown="" fullname="HP" hidden="false" id="2" name="_HP" order="1"/>
+        <number default="5.0" defaultValue="5.0" desc="" dropdown="" fullname="HP" hidden="false" id="2" name="_HP" order="1"/>
         <blocks/>
         <events>
-            <event displayName="moving towards" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="             Damage   " enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
+            <event displayName="moving towards" enabled="true" id="2" name="step" order="2" repeats="false"/>
+            <event displayName="Hurt damage" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
+            <event displayName="HP amount" enabled="true" id="5" name="init" order="6" repeats="true"/>
+            <event displayName="kill self if hp=0" enabled="true" id="6" name="step" order="5" repeats="false"/>
         </events>
     </snippet>
     <snippet actorid="9" attachedevent="true" class="scripts.ActorEvents_9" classname="scripts.ActorEvents_9" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="9" name="ActorEvents_9" oid="-1" package="scripts." shared="false" type="actor">
@@ -116,10 +119,15 @@
     <snippet actorid="13" attachedevent="true" class="scripts.ActorEvents_13" classname="scripts.ActorEvents_13" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_13" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
+            <event displayName="Damage for bear" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
+            <event displayName="kill after leaving" enabled="true" id="2" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="15" attachedevent="true" class="scripts.ActorEvents_15" classname="scripts.ActorEvents_15" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_15" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="17" attachedevent="true" class="scripts.ActorEvents_17" classname="scripts.ActorEvents_17" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="13" name="ActorEvents_17" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>

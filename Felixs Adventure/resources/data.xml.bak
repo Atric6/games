@@ -32,6 +32,14 @@
             <poly data="4,0,0,11,0,11,11,0,11" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="13" fixedrot="false" fric="0.2" gid="7" id="17" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Heart powerup" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="18" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="18" name="Heart powerup" shared="false" width="32">
+        <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" sync="false" version="2" width="32">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="false" fric="0.2" gid="3" id="15" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Missile" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="16" static="false">
         <snippets/>
     </actor>
@@ -40,7 +48,7 @@
             <poly data="4,15,15,41,15,41,23,15,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="true" fric="0.2" gid="3" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Regular Bear" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="true" fric="0.2" gid="5" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Regular Bear" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="7" name="Regular Bear" shared="false" width="85">
@@ -49,20 +57,12 @@
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="8" name="Sky Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="10" fixedrot="false" fric="0.2" gid="3" id="11" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Wall" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="10" fixedrot="false" fric="0.2" gid="6" id="11" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Wall" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="true">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="12" name="Wall" shared="false" width="32">
         <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" sync="false" version="2" width="32">
             <poly data="4,0,28,32,28,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="13" fixedrot="false" fric="0.2" gid="3" id="17" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Yes" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="18" static="false">
-        <snippets/>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="335" id="18" name="Yes" shared="false" width="568">
-        <anim across="1" down="1" durations="100" height="335" id="0" loop="true" name="Animation 0" numframes="1" originx="284" originy="167" sync="false" version="2" width="568">
-            <poly data="4,0,0,568,0,568,335,0,335" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
 </pack>
