@@ -56,6 +56,7 @@
         <group desc="" id="5" name="Enemy"/>
         <group desc="" id="6" name="Wall"/>
         <group desc="" id="7" name="Powerups"/>
+        <group desc="" id="8" name="Spawner"/>
     </groups>
     <cgroups>
         <cgroup g1="0" g2="1"/>
@@ -63,6 +64,7 @@
         <cgroup g1="1" g2="3"/>
         <cgroup g1="3" g2="3"/>
         <cgroup g1="3" g2="5"/>
+        <cgroup g1="3" g2="8"/>
         <cgroup g1="4" g2="5"/>
         <cgroup g1="5" g2="6"/>
     </cgroups>
@@ -79,7 +81,10 @@
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
-    <attributes/>
+    <attributes>
+        <number cid="-1" id="0" name="X of fish" save="true" value="0.0"/>
+        <number cid="-1" id="1" name="Y of fish" save="true" value="0.0"/>
+    </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
         <poly id="1" name="Rect Up" pts="0.0,0.0#0.0,0.5#1.0,0.5#1.0,0.0"/>
@@ -109,7 +114,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,6,8,9,11,13,15,17," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,6,8,9,13,15,17,21,23," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

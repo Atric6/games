@@ -6,8 +6,20 @@
                 <push-shove comment="false" x="26" y="40">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="-108"/>
-                    <int id="3" val="6"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                    </minus>
+                    <minus comment="false" id="3" x="0" y="0">
+                        <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                    </minus>
                     <int id="4" val="6"/>
                 </push-shove>
             </group>
@@ -20,7 +32,7 @@
                 <incdec comment="false" x="26" y="40">
                     <int id="0" val="2"/>
                     <int id="1" val="1"/>
-                    <int id="2" val="1"/>
+                    <int id="2" val="2"/>
                 </incdec>
                 <apply-filter comment="false" x="26" y="67">
                     <ACTOR eid="this" id="0"/>
@@ -44,7 +56,7 @@
         <init comment="false" x="15" y="15">
             <group eventID="5" id="-1">
                 <set-val-8-2 comment="false" x="26" y="40">
-                    <int id="0" val="8"/>
+                    <int id="0" val="4"/>
                 </set-val-8-2>
             </group>
         </init>

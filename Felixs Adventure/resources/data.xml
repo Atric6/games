@@ -21,7 +21,15 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="42" id="14" name="Fireball" shared="false" width="48">
         <anim across="1" down="1" durations="100" height="42" id="0" loop="true" name="Animation 0" numframes="1" originx="24" originy="21" sync="false" version="2" width="48">
-            <poly data="4,7,15,41,15,41,29,7,29" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,7,15,41,15,41,29,7,29" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="3" id="23" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Game Over Bear" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="24" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="24" name="Game Over Bear" shared="false" width="85">
+        <anim across="2" down="2" durations="100,100,100,100" height="128" id="0" loop="true" name="Animation 0" numframes="4" originx="42" originy="32" sync="false" version="2" width="170">
+            <poly data="4,0,0,85,0,85,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="9" fixedrot="false" fric="0.2" gid="3" id="9" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Health Heart" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="10" static="true">
@@ -57,12 +65,12 @@
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="8" name="Sky Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="10" fixedrot="false" fric="0.2" gid="6" id="11" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Wall" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="14" fixedrot="false" fric="0.2" gid="8" id="21" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Spawner" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="22" static="false">
         <snippets/>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="12" name="Wall" shared="false" width="32">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="22" name="Spawner" shared="false" width="32">
         <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" sync="false" version="2" width="32">
-            <poly data="4,0,28,32,28,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
 </pack>

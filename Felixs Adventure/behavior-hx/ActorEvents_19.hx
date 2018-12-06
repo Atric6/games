@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_2 extends ActorScript
+class ActorEvents_19 extends ActorScript
 {
 	
 	
@@ -82,15 +82,41 @@ class ActorEvents_2 extends ActorScript
 	override public function init()
 	{
 		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 4, function(timeTask:TimedTask):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorType(6), event.otherActor.getType(),event.otherActor.getGroup()))
+			if(wrapper.enabled)
 			{
-				recycleActor(actor);
-				recycleActor(event.otherActor);
+				createRecycledActor(getActorType(6), 607, 93, Script.FRONT);
 			}
-		});
+		}, actor);
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 6, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				createRecycledActor(getActorType(6), 608, 180, Script.FRONT);
+			}
+		}, actor);
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 8, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				createRecycledActor(getActorType(6), 608, 238, Script.FRONT);
+			}
+		}, actor);
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 10, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				createRecycledActor(getActorType(6), 609, 306, Script.FRONT);
+			}
+		}, actor);
 		
 	}
 	
