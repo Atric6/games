@@ -25,6 +25,7 @@
         <actor a="0.0" aid="15" c="false" group="8" id="21" name="Spawner 15" sx="1.0" sy="1.0" x="609" y="263" z="0"/>
         <actor a="0.0" aid="16" c="false" group="8" id="21" name="Spawner 16" sx="1.0" sy="1.0" x="609" y="192" z="0"/>
         <actor a="0.0" aid="17" c="false" group="8" id="21" name="Spawner 17" sx="1.0" sy="1.0" x="608" y="115" z="0"/>
+        <actor a="0.0" aid="18" c="false" group="3" id="29" name="Powerup Spawner 18" sx="1.0" sy="1.0" x="516" y="48" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
