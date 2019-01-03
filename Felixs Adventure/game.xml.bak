@@ -57,6 +57,7 @@
         <group desc="" id="6" name="Wall"/>
         <group desc="" id="7" name="Powerups"/>
         <group desc="" id="8" name="Spawner"/>
+        <group desc="" id="9" name="Game Over screen bear"/>
     </groups>
     <cgroups>
         <cgroup g1="0" g2="1"/>
@@ -82,9 +83,13 @@
     </attcats>
     <props/>
     <attributes>
-        <number cid="-1" id="3" name="Y of Felix" save="true" value="0"/>
-        <number cid="-1" id="2" name="X of Felix" save="true" value="0"/>
+        <number cid="-1" id="5" name="Y of Bear" save="true" value="0.0"/>
+        <number cid="-1" id="6" name="Score" save="true" value="0.0"/>
+        <number cid="-1" id="3" name="Y of Felix" save="true" value="0.0"/>
+        <number cid="-1" id="2" name="X of Felix" save="true" value="0.0"/>
+        <number cid="-1" id="4" name="X of Bear" save="true" value="0.0"/>
         <number cid="-1" id="0" name="X of fish" save="true" value="0.0"/>
+        <number cid="-1" id="7" name="Enemies Killed" save="true" value="0.0"/>
         <number cid="-1" id="1" name="Y of fish" save="true" value="0.0"/>
     </attributes>
     <collisions>
@@ -116,7 +121,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,6,8,9,13,15,17,21,23,27,29," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,6,8,9,13,15,17,21,23,27,29,31," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

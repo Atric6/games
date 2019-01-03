@@ -58,4 +58,18 @@
         </step>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <push-shove comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <get-game-val-0 comment="false" id="2" x="0" y="0"/>
+                    <get-game-val-1 comment="false" id="3" x="0" y="0"/>
+                    <int id="4" val="5"/>
+                </push-shove>
+            </group>
+        </step>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>

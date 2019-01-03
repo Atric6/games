@@ -9,23 +9,15 @@
     <regions/>
     <terrainRegions/>
     <actors>
+        <actor a="0.0" aid="16" c="false" group="8" id="21" name="Spawner 16" sx="1.0" sy="1.0" x="609" y="192" z="0"/>
         <actor a="0.0" aid="1" c="false" group="0" id="0" name="Felix 1" sx="1.0" sy="1.0" x="83" y="210" z="0"/>
+        <actor a="0.0" aid="17" c="false" group="8" id="21" name="Spawner 17" sx="1.0" sy="1.0" x="608" y="115" z="0"/>
         <actor a="0.0" aid="2" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="3" y="257" z="0"/>
         <actor a="0.0" aid="3" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="3" y="189" z="0"/>
         <actor a="0.0" aid="4" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="5" y="112" z="0"/>
         <actor a="0.0" aid="5" c="false" group="3" id="2" name="Bucket O fish" sx="1.0" sy="1.0" x="3" y="324" z="0"/>
-        <actor a="0.0" aid="7" c="false" group="3" id="9" name="Health Heart 7" sx="1.0" sy="1.0" x="0" y="419" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="3" id="9" name="Health Heart 8" sx="1.0" sy="1.0" x="14" y="419" z="0"/>
-        <actor a="0.0" aid="9" c="false" group="3" id="9" name="Health Heart 9" sx="1.0" sy="1.0" x="32" y="418" z="0"/>
-        <actor a="0.0" aid="10" c="false" group="3" id="9" name="Health Heart 10" sx="1.0" sy="1.0" x="33" y="430" z="0"/>
-        <actor a="0.0" aid="11" c="false" group="3" id="9" name="Health Heart 11" sx="1.0" sy="1.0" x="16" y="430" z="0"/>
-        <actor a="0.0" aid="12" c="false" group="3" id="9" name="Health Heart 12" sx="1.0" sy="1.0" x="0" y="430" z="0"/>
-        <actor a="0.0" aid="13" c="false" group="3" id="9" name="Health Heart 13" sx="1.0" sy="1.0" x="1" y="445" z="0"/>
         <actor a="0.0" aid="14" c="false" group="8" id="21" name="Spawner 14" sx="1.0" sy="1.0" x="607" y="329" z="0"/>
         <actor a="0.0" aid="15" c="false" group="8" id="21" name="Spawner 15" sx="1.0" sy="1.0" x="609" y="263" z="0"/>
-        <actor a="0.0" aid="16" c="false" group="8" id="21" name="Spawner 16" sx="1.0" sy="1.0" x="609" y="192" z="0"/>
-        <actor a="0.0" aid="17" c="false" group="8" id="21" name="Spawner 17" sx="1.0" sy="1.0" x="608" y="115" z="0"/>
-        <actor a="0.0" aid="18" c="false" group="3" id="29" name="Powerup Spawner 18" sx="1.0" sy="1.0" x="516" y="48" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
