@@ -9,27 +9,27 @@
                     <int id="2" val="240"/>
                     <int id="3" val="0"/>
                 </create-actor3>
+                <die comment="false" x="26" y="69">
+                    <ACTOR eid="17" id="0"/>
+                </die>
+                <die comment="false" x="26" y="96">
+                    <ACTOR eid="16" id="0"/>
+                </die>
+                <die comment="false" x="26" y="123">
+                    <ACTOR eid="15" id="0"/>
+                </die>
+                <die comment="false" x="26" y="150">
+                    <ACTOR eid="14" id="0"/>
+                </die>
+                <set-val-0-3 comment="false" x="26" y="177">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-3>
             </group>
             <int id="0" val="1"/>
             <ACTOR eid="3" id="1"/>
         </event-actor-create-kill>
     </group>
     <group eventID="2" id="-1"/>
-    <group eventID="4" id="0">
-        <draw comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <set-font-new comment="false" x="26" y="40">
-                    <font eid="31" id="0"/>
-                </set-font-new>
-                <draw-text comment="false" x="26" y="67">
-                    <int id="0" val="Score:"/>
-                    <int id="1" val="10"/>
-                    <int id="2" val="10"/>
-                </draw-text>
-            </group>
-        </draw>
-    </group>
-    <group eventID="4" id="-1"/>
     <group eventID="5" id="0">
         <draw comment="false" x="15" y="15">
             <group eventID="5" id="-1">
@@ -41,8 +41,111 @@
                     <int id="1" val="120"/>
                     <int id="2" val="15"/>
                 </draw-text>
+                <set-font-new comment="false" x="26" y="92">
+                    <font eid="31" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="119">
+                    <int id="0" val="Score:"/>
+                    <int id="1" val="10"/>
+                    <int id="2" val="10"/>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="139">
+                    <font eid="31" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="166">
+                    <int id="0" val="Press Spacebar to shoot!"/>
+                    <int id="1" val="210"/>
+                    <int id="2" val="390"/>
+                </draw-text>
+                <if comment="false" x="26" y="186">
+                    <group eventID="5" id="-1">
+                        <draw-text comment="false" x="37" y="211">
+                            <int id="0" val="Game Over, Press &amp;apos;enter&amp;apos; to try again"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="170"/>
+                        </draw-text>
+                    </group>
+                    <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                </if>
             </group>
         </draw>
     </group>
     <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-sound-finished comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <repeat comment="false" x="26" y="42">
+                    <group eventID="6" id="-1"/>
+                    <int id="0" val="9999"/>
+                </repeat>
+            </group>
+            <sound eid="35" id="0"/>
+        </event-sound-finished>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="7" id="-1">
+                        <scene-reload-color comment="false" x="37" y="67">
+                            <int id="0" val="0"/>
+                            <int id="1" val=".5"/>
+                            <color b="0" g="0" id="2" r="0"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val=".5"/>
+                            <color b="0" g="0" id="5" r="0"/>
+                        </scene-reload-color>
+                        <set-val-0-3 comment="false" x="37" y="94">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-3>
+                    </group>
+                    <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <control eid="6" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="9" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="9" id="-1">
+                        <set-val-0-4 comment="false" x="37" y="70">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="107">
+                    <group eventID="9" id="-1">
+                        <draw-text comment="false" x="37" y="132">
+                            <int id="0" val="Level 1 completed! Good Job!"/>
+                            <int id="1" val="100"/>
+                            <int id="2" val="170"/>
+                        </draw-text>
+                        <die comment="false" x="37" y="152">
+                            <ACTOR eid="17" id="0"/>
+                        </die>
+                        <die comment="false" x="37" y="179">
+                            <ACTOR eid="16" id="0"/>
+                        </die>
+                        <die comment="false" x="37" y="206">
+                            <ACTOR eid="15" id="0"/>
+                        </die>
+                        <die comment="false" x="37" y="233">
+                            <ACTOR eid="14" id="0"/>
+                        </die>
+                    </group>
+                    <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>

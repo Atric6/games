@@ -72,6 +72,16 @@ import com.stencyl.graphics.shaders.BloomShader;
 class ActorEvents_0 extends ActorScript
 {
 	public var _HP:Float;
+	public var _Shooting:Bool;
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_TakeDamage():Void
+	{
+		actor.setFilter([createNegativeFilter()]);
+		actor.clearFilters();
+		_HP -= 1;
+		propertyChanged("_HP", _HP);
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -79,6 +89,8 @@ class ActorEvents_0 extends ActorScript
 		super(actor);
 		nameMap.set("HP", "_HP");
 		_HP = 4.0;
+		nameMap.set("Shooting", "_Shooting");
+		_Shooting = false;
 		
 	}
 	
@@ -147,6 +159,7 @@ class ActorEvents_0 extends ActorScript
 			if(wrapper.enabled && pressed)
 			{
 				createRecycledActor(getActorType(13), actor.getX(), actor.getY(), Script.BACK);
+				playSound(getSound(36));
 				getLastCreatedActor().applyImpulse(1, 0, 30);
 			}
 		});

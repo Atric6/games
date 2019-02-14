@@ -74,6 +74,8 @@ class SceneEvents_0 extends SceneScript
 {
 	public var _Startingtext:Bool;
 	public var _Points:Float;
+	public var _Gameover:Bool;
+	public var _LevelWin:Bool;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
@@ -83,6 +85,10 @@ class SceneEvents_0 extends SceneScript
 		_Startingtext = false;
 		nameMap.set("Points", "_Points");
 		_Points = 0.0;
+		nameMap.set("Game over", "_Gameover");
+		_Gameover = false;
+		nameMap.set("Level Win", "_LevelWin");
+		_LevelWin = false;
 		
 	}
 	
@@ -95,16 +101,24 @@ class SceneEvents_0 extends SceneScript
 			if(wrapper.enabled)
 			{
 				createRecycledActor(getActorType(23), 300, 240, Script.FRONT);
+				recycleActor(getActor(17));
+				recycleActor(getActor(16));
+				recycleActor(getActor(15));
+				recycleActor(getActor(14));
+				_Gameover = true;
+				propertyChanged("_Gameover", _Gameover);
 			}
 		});
 		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		/* ======================== Sound is done ========================= */
+		addSoundListener(getSound(35), function(list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				g.setFont(getFont(31));
-				g.drawString("" + "Score:", 10, 10);
+				for(index0 in 0...Std.int(9999))
+				{
+					
+				}
 			}
 		});
 		
@@ -115,6 +129,49 @@ class SceneEvents_0 extends SceneScript
 			{
 				g.setFont(getFont(31));
 				g.drawString("" + Engine.engine.getGameAttribute("Enemies Killed"), 120, 15);
+				g.setFont(getFont(31));
+				g.drawString("" + "Score:", 10, 10);
+				g.setFont(getFont(31));
+				g.drawString("" + "Press Spacebar to shoot!", 210, 390);
+				if(_Gameover)
+				{
+					g.drawString("" + "Game Over, Press 'enter' to try again", 0, 170);
+				}
+			}
+		});
+		
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("enter", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && pressed)
+			{
+				if(_Gameover)
+				{
+					reloadCurrentScene(createFadeOut(.5, Utils.getColorRGB(0,0,0)), createFadeIn(.5, Utils.getColorRGB(0,0,0)));
+					_Gameover = false;
+					propertyChanged("_Gameover", _Gameover);
+				}
+			}
+		});
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((Engine.engine.getGameAttribute("Enemies Killed") == 2))
+				{
+					_LevelWin = true;
+					propertyChanged("_LevelWin", _LevelWin);
+				}
+				if(_LevelWin)
+				{
+					g.drawString("" + "Level 1 completed! Good Job!", 100, 170);
+					recycleActor(getActor(17));
+					recycleActor(getActor(16));
+					recycleActor(getActor(15));
+					recycleActor(getActor(14));
+				}
 			}
 		});
 		

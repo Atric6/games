@@ -136,7 +136,7 @@ class ActorEvents_6 extends ActorScript
 		{
 			if(wrapper.enabled && sameAsAny(getActorType(0), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
-				actor.shout("_customEvent_" + "TakeDamage");
+				event.otherActor.shout("_customEvent_" + "TakeDamage");
 			}
 		});
 		
