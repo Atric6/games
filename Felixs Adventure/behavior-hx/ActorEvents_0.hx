@@ -75,6 +75,12 @@ class ActorEvents_0 extends ActorScript
 	public var _Shooting:Bool;
 	
 	/* ========================= Custom Event ========================= */
+	public function _customEvent_LevelWin():Void
+	{
+		actor.applyImpulse(495, 166, 1.5);
+	}
+	
+	/* ========================= Custom Event ========================= */
 	public function _customEvent_TakeDamage():Void
 	{
 		actor.setFilter([createNegativeFilter()]);

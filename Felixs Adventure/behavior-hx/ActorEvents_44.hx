@@ -82,6 +82,42 @@ class ActorEvents_44 extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 6, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				createRecycledActor(getActorType(6), 607, 93, Script.FRONT);
+			}
+		}, actor);
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 8, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				createRecycledActor(getActorType(6), 608, 180, Script.FRONT);
+			}
+		}, actor);
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 10, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				createRecycledActor(getActorType(6), 608, 238, Script.FRONT);
+			}
+		}, actor);
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 12, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				createRecycledActor(getActorType(6), 609, 306, Script.FRONT);
+			}
+		}, actor);
+		
 	}
 	
 	override public function forwardMessage(msg:String)

@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_2 extends SceneScript
+class SceneEvents_3 extends SceneScript
 {
 	
 	

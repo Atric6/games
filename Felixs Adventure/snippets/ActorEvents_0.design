@@ -179,16 +179,16 @@
     </group>
     <group eventID="5" id="-1"/>
     <group eventID="7" id="0">
-        <event-custom comment="false" x="15" y="15">
+        <event-custom comment="false" x="26" y="18">
             <group eventID="7" id="-1">
-                <apply-filter comment="false" x="26" y="40">
+                <apply-filter comment="false" x="37" y="43">
                     <ACTOR eid="this" id="0"/>
                     <filter-negative comment="false" id="1" x="0" y="0"/>
                 </apply-filter>
-                <clear-filter comment="false" x="26" y="72">
+                <clear-filter comment="false" x="37" y="75">
                     <ACTOR eid="this" id="0"/>
                 </clear-filter>
-                <incdec comment="false" x="26" y="99">
+                <incdec comment="false" x="37" y="102">
                     <int id="0" val="1"/>
                     <int id="1" val="1"/>
                     <int id="2" val="1"/>
@@ -226,4 +226,19 @@
         </init>
     </group>
     <group eventID="9" id="-1"/>
+    <group eventID="11" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="11" id="-1">
+                <push-shove comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="495"/>
+                    <int id="3" val="166"/>
+                    <int id="4" val="1.5"/>
+                </push-shove>
+            </group>
+            <int id="0" val="LevelWin"/>
+        </event-custom>
+    </group>
+    <group eventID="11" id="-1"/>
 </groups>
